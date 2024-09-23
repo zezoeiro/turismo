@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <img src="flying-around-the-world-animate.svg" class="left-login-img" alt="animação">
+        </div>
+        <div class="right-login">
+            <div class="card-login"> 
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button id="btn-login" class="btn-login">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn-login").onclick = function() {
+            localStorage.setItem("loggedIn", true); 
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>
