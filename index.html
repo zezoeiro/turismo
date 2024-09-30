@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Turístico - Pesquisa de Hotéis</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        window.onload = function() {
+            if (!localStorage.getItem("loggedIn")) {
+                window.location.href = "login.html"; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <section id="home">
+        <div class="header-container">
+            <h1 class="welcome-heading">Bem-vindo ao nosso Guia Turístico!</h1>
+          
+        </div>
+        <p class="wolcome-head">Descubra destinos incríveis, encontre dicas úteis e planeje sua próxima aventura conosco.</p>
+    </section>
+
+    <section id="destinos">
+        <h2>Destinos Populares</h2>
+        <div class="destinos-container">
+            <div class="img-destino">
+                <img src="paris.jpg" alt="Paris" class="box">
+                <img src="mapafranza.webp" alt="Mapa de Paris" class="image-haver">
+                <h3>Paris</h3>
+                <p>Explore a Cidade Luz e descubra suas maravilhas.</p>
+            </div>
+            <div class="img-destino">
+                <img src="nova york.jpg" alt="Nova York" class="travis">
+                <img src="mapaYORK.jpg" alt="Mapa de Nova York" class="image-map">
+                <h3>Nova York</h3>
+                <p>A cidade que nunca dorme está esperando por você.</p>
+            </div>
+            <div class="img-destino">
+                <img src="capital RJ.jpg" alt="Rio de Janeiro" class="box">
+                <img src="mapaRJ.avif" alt="Mapa do Rio de Janeiro" class="image-map">
+                <h3>Rio de Janeiro</h3>
+                <p>Conheça as belezas naturais e culturais do Rio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="guias">
+        <div class="lists-container">
+            <div id="info-list-week">
+                <h3>Principais lugares visitados desta semana (preço da passagem)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Destino</th>
+                            <th>Preço Econômico</th>
+                            <th>Preço Luxo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Paris</td>
+                            <td>R$ 3.000,00</td>
+                            <td>R$ 10.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nova York</td>
+                            <td>R$ 4.500,00</td>
+                            <td>R$ 12.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Tokyo</td>
+                            <td>R$ 5.000,00</td>
+                            <td>R$ 15.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rio de Janeiro</td>
+                            <td>R$ 1.200,00</td>
+                            <td>R$ 5.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Lisboa</td>
+                            <td>R$ 2.800,00</td>
+                            <td>R$ 8.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="info-list-month">
+                <h3>Principais lugares visitados deste mês (preço da passagem)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Destino</th>
+                            <th>Preço Econômico</th>
+                            <th>Preço Luxo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bangkok</td>
+                            <td>R$ 4.000,00</td>
+                            <td>R$ 15.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Paris</td>
+                            <td>R$ 3.500,00</td>
+                            <td>R$ 12.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Dubai</td>
+                            <td>R$ 4.200,00</td>
+                            <td>R$ 14.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>London</td>
+                            <td>R$ 4.800,00</td>
+                            <td>R$ 13.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>New York City</td>
+                            <td>R$ 5.000,00</td>
+                            <td>R$ 16.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+    <footer></footer>
+        <div class="social-media">
+            <p>  &nbsp; Me siga no Instagram
+                <a href="https://www.instagram.com/zezoeiro3/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+        </div>
+        <p>© 2024 Guia Turístico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
